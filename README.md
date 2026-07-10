@@ -320,30 +320,6 @@ Load a fixed map with:
 env = Drone3DEnv(curriculum_level=4)
 env.load_map("map/tmap_level4.pkl")
 ```
-
-## Reproducibility Notes
-
-The current code does not globally seed Python `random`, NumPy, and PyTorch in the training scripts. For repeatable experiments, add a helper similar to:
-
-```python
-import random
-import numpy as np
-import torch
-
-
-def set_seed(seed: int) -> None:
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
-    if torch.cuda.is_available():
-        torch.cuda.manual_seed_all(seed)
-
-
-set_seed(42)
-```
-
-Also pass the seed to `env.reset(seed=42)` and preserve the exact serialized maps used in the experiments. For publication results, report the seeds, hardware, dependency versions, number of runs, and model-selection rule.
-
 ## Checkpoint Compatibility
 
 A checkpoint must be loaded with the corresponding agent class and compatible network/configuration parameters. In particular, the pretrained `AD-SAC-UA.pth` checkpoint is intended for `SACAgent` with the configuration used in `demo.py`.
