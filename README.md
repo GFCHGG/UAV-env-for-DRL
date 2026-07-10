@@ -374,7 +374,7 @@ Please cite the associated paper after replacing the placeholder information bel
 
 ## License
 
-No license file was included in the supplied project archive. Before publishing the repository, add an explicit open-source license such as MIT, Apache-2.0, or GPL-3.0 according to the authors' and institution's requirements. Without a license, others generally do not automatically receive permission to reuse, modify, or redistribute the code.
+This project is licensed under the MIT License. For the full license terms, please refer to the LICENSE file in the project root directory.
 
 ## Acknowledgements
 
