@@ -1,5 +1,5 @@
 # AD-SAC-UA: Uncertainty-Aware Adaptive-Delay Soft Actor-Critic for 3D UAV Navigation
-
+[![DOI](https://zenodo.org/badge/1294808699.svg)](https://doi.org/10.5281/zenodo.21289289)
 Official implementation of **AD-SAC-UA**, a Soft Actor-Critic-based reinforcement learning method for autonomous UAV navigation in a three-dimensional urban environment with obstacles and no-fly zones.
 
 The repository contains the proposed method, two comparison methods, a custom Gymnasium environment, training scripts, evaluation utilities, TensorBoard plotting tools, trajectory visualization code, and a pretrained AD-SAC-UA checkpoint.
@@ -359,18 +359,6 @@ PyTorch checkpoints use Python serialization. Only load checkpoint files obtaine
 - PyVista visualization may require additional system-level display configuration on remote servers.
 
 ## Citation
-
-Please cite the associated paper after replacing the placeholder information below:
-
-```bibtex
-@article{yourkey2026adsacua,
-  title   = {AD-SAC-UA: Uncertainty-Aware Adaptive-Delay Soft Actor-Critic for 3D UAV Navigation},
-  author  = {Author One and Author Two and Author Three},
-  journal = {Journal or Conference Name},
-  year    = {2026},
-  doi     = {DOI}
-}
-```
 
 ## License
 
